@@ -1,0 +1,1 @@
+e:\Qt\4.8.4\bin\qmake.exe -tp vc -r

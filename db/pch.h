@@ -1,0 +1,2 @@
+#include <QtTest>
+#include <QtSql>

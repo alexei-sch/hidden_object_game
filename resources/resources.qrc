@@ -1,0 +1,19 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+	<file>data/mainscreen/background.png</file>
+	<file>data/common/closebutton.png</file>
+
+	<file>data/Room_001_Livingroom_all/lamp.jpg</file>
+	<file>data/Room_001_Livingroom_all/pendulum.jpg</file>
+	<file>data/Room_001_Livingroom_all/Room_001_Livingroom_all.png</file>
+	<file>data/Room_001_Livingroom_all/Room_001_Livingroom_all_list.png</file>
+	<file>data/Room_001_Livingroom_all/anim.xml</file>
+	<file>data/Room_001_Livingroom_all/Room_001_Livingroom_all.xml</file>
+
+	<file>data/Room_003_Kitchen_all/Room_003_Kitchen_all.jpg</file>
+	<file>data/Room_003_Kitchen_all/Room_003_Kitchen_all_.png</file>
+	<file>data/Room_003_Kitchen_all/Room_003_Kitchen_all_adding.png</file>
+	<file>data/Room_003_Kitchen_all/Room_003_Kitchen_all_list.png</file>
+	<file>data/Room_003_Kitchen_all/Room_003_Kitchen_all.xml</file>
+</qresource>
+</RCC>

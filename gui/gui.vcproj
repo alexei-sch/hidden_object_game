@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="gui"
+	ProjectGUID="{75BE5719-5641-3902-8C2F-1F9357DFD641}"
+	Keyword="Qt4VSv1.0">
+	<Platforms>
+		<Platform
+			Name="Win32" />
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(SolutionDir)\bin\debug\"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="2"
+			IntermediateDirectory="obj\debug\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;..\..\..\Qt\4.8.4\include\QtCore&quot;,&quot;..\..\..\Qt\4.8.4\include\QtGui&quot;,&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot;,&quot;..\..\..\Qt\4.8.4\include&quot;,&quot;..&quot;,&quot;.&quot;,&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot;,&quot;generatedfiles\moc&quot;,..\..\..\Qt\4.8.4\mkspecs\default"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				AssemblerListingLocation="obj\debug\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="3"
+				ExceptionHandling="1"
+				ForcedIncludeFiles="pch.h"
+				GeneratePreprocessedFile="0"
+				ObjectFile="obj\debug\"
+				Optimization ="4"
+				PrecompiledHeaderFile="$(IntDir)\gui.pch"
+				PrecompiledHeaderThrough="pch.h"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_NO_KEYWORDS,BUILD_GUI_LIB,QT_DLL,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="true"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				UsePrecompiledHeader="2"
+				WarnAsError="true"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="glu32.lib opengl32.lib gdi32.lib user32.lib core.lib resources.lib e:\Qt\4.8.4\lib\QtOpenGLd4.lib e:\Qt\4.8.4\lib\QtGuid4.lib e:\Qt\4.8.4\lib\QtCored4.lib"
+				AdditionalLibraryDirectories="$(SolutionDir)\bin\debug,e:\Qt\4.8.4\lib"
+				GenerateDebugInformation="true"
+				IgnoreImportLibrary="true"
+				LinkTimeCodeGeneration="0"
+				OutputFile="$(OutDir)\gui.dll"
+				ProgramDatabaseFile=""
+				SubSystem="0"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_NO_KEYWORDS,BUILD_GUI_LIB,QT_DLL,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,_DEBUG" />
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(SolutionDir)\bin\release\"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="2"
+			IntermediateDirectory="obj\release\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;..\..\..\Qt\4.8.4\include\QtCore&quot;,&quot;..\..\..\Qt\4.8.4\include\QtGui&quot;,&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot;,&quot;..\..\..\Qt\4.8.4\include&quot;,&quot;..&quot;,&quot;.&quot;,&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot;,&quot;generatedfiles\moc&quot;,..\..\..\Qt\4.8.4\mkspecs\default"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				AssemblerListingLocation="obj\release\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="0"
+				ExceptionHandling="1"
+				ForcedIncludeFiles="pch.h"
+				GeneratePreprocessedFile="0"
+				ObjectFile="obj\release\"
+				Optimization ="2"
+				PrecompiledHeaderFile="$(IntDir)\gui.pch"
+				PrecompiledHeaderThrough="pch.h"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_NO_KEYWORDS,BUILD_GUI_LIB,QT_DLL,QT_NO_DEBUG,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,NDEBUG"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="true"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				UsePrecompiledHeader="2"
+				WarnAsError="true"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="glu32.lib opengl32.lib gdi32.lib user32.lib core.lib resources.lib e:\Qt\4.8.4\lib\QtOpenGL4.lib e:\Qt\4.8.4\lib\QtGui4.lib e:\Qt\4.8.4\lib\QtCore4.lib"
+				AdditionalLibraryDirectories="$(SolutionDir)\bin\release,e:\Qt\4.8.4\lib"
+				GenerateDebugInformation="false"
+				IgnoreImportLibrary="true"
+				LinkIncremental="1"
+				LinkTimeCodeGeneration="0"
+				OutputFile="$(OutDir)\gui.dll"
+				ProgramDatabaseFile=""
+				SubSystem="0"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_NO_KEYWORDS,BUILD_GUI_LIB,QT_DLL,QT_NO_DEBUG,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT" />
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<Filter
+				Name="common"
+				Filter="">
+				<File
+					RelativePath="common\closebutton.cpp" />
+				<File
+					RelativePath="common\timeformatter.cpp" />
+			</Filter>
+			<Filter
+				Name="dialogs"
+				Filter="">
+				<File
+					RelativePath="dialogs\dialog.cpp" />
+				<File
+					RelativePath="dialogs\dialogmanager.cpp" />
+			</Filter>
+			<Filter
+				Name="energy"
+				Filter="">
+				<File
+					RelativePath="energy\energywidget.cpp" />
+			</Filter>
+			<Filter
+				Name="game"
+				Filter="">
+				<File
+					RelativePath="game\gamewidget.cpp" />
+			</Filter>
+			<Filter
+				Name="location"
+				Filter="">
+				<File
+					RelativePath="location\animations.cpp" />
+				<File
+					RelativePath="location\itemfoundanimation.cpp" />
+				<File
+					RelativePath="location\locationcontroller.cpp" />
+				<File
+					RelativePath="location\locationview.cpp" />
+				<File
+					RelativePath="location\searchpanelview.cpp" />
+				<File
+					RelativePath="location\timerview.cpp" />
+			</Filter>
+			<Filter
+				Name="mainscreen"
+				Filter="">
+				<File
+					RelativePath="mainscreen\locationinfodialog.cpp" />
+				<File
+					RelativePath="mainscreen\mainscreenwidget.cpp" />
+				<File
+					RelativePath="mainscreen\stickerbutton.cpp" />
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<Filter
+				Name="common"
+				Filter="">
+				<File
+					RelativePath="common\closebutton.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;common\closebutton.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 common\closebutton.h -o generatedfiles\moc\moc_closebutton.cpp"
+							Description="MOC common\closebutton.h"
+							Outputs="generatedfiles\moc\moc_closebutton.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;common\closebutton.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 common\closebutton.h -o generatedfiles\moc\moc_closebutton.cpp"
+							Description="MOC common\closebutton.h"
+							Outputs="generatedfiles\moc\moc_closebutton.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="common\timeformatter.h" />
+			</Filter>
+			<Filter
+				Name="dialogs"
+				Filter="">
+				<File
+					RelativePath="dialogs\dialog.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;dialogs\dialog.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 dialogs\dialog.h -o generatedfiles\moc\moc_dialog.cpp"
+							Description="MOC dialogs\dialog.h"
+							Outputs="generatedfiles\moc\moc_dialog.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;dialogs\dialog.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 dialogs\dialog.h -o generatedfiles\moc\moc_dialog.cpp"
+							Description="MOC dialogs\dialog.h"
+							Outputs="generatedfiles\moc\moc_dialog.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="dialogs\dialogmanager.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;dialogs\dialogmanager.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 dialogs\dialogmanager.h -o generatedfiles\moc\moc_dialogmanager.cpp"
+							Description="MOC dialogs\dialogmanager.h"
+							Outputs="generatedfiles\moc\moc_dialogmanager.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;dialogs\dialogmanager.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 dialogs\dialogmanager.h -o generatedfiles\moc\moc_dialogmanager.cpp"
+							Description="MOC dialogs\dialogmanager.h"
+							Outputs="generatedfiles\moc\moc_dialogmanager.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="dialogs\idialogmanager.h" />
+			</Filter>
+			<Filter
+				Name="energy"
+				Filter="">
+				<File
+					RelativePath="energy\energywidget.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;energy\energywidget.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 energy\energywidget.h -o generatedfiles\moc\moc_energywidget.cpp"
+							Description="MOC energy\energywidget.h"
+							Outputs="generatedfiles\moc\moc_energywidget.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;energy\energywidget.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 energy\energywidget.h -o generatedfiles\moc\moc_energywidget.cpp"
+							Description="MOC energy\energywidget.h"
+							Outputs="generatedfiles\moc\moc_energywidget.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+				</File>
+			</Filter>
+			<Filter
+				Name="game"
+				Filter="">
+				<File
+					RelativePath="game\gamewidget.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;game\gamewidget.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 game\gamewidget.h -o generatedfiles\moc\moc_gamewidget.cpp"
+							Description="MOC game\gamewidget.h"
+							Outputs="generatedfiles\moc\moc_gamewidget.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;game\gamewidget.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 game\gamewidget.h -o generatedfiles\moc\moc_gamewidget.cpp"
+							Description="MOC game\gamewidget.h"
+							Outputs="generatedfiles\moc\moc_gamewidget.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+				</File>
+			</Filter>
+			<Filter
+				Name="location"
+				Filter="">
+				<File
+					RelativePath="location\animations.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;location\animations.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 location\animations.h -o generatedfiles\moc\moc_animations.cpp"
+							Description="MOC location\animations.h"
+							Outputs="generatedfiles\moc\moc_animations.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;location\animations.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 location\animations.h -o generatedfiles\moc\moc_animations.cpp"
+							Description="MOC location\animations.h"
+							Outputs="generatedfiles\moc\moc_animations.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="location\ianimation.h" />
+				<File
+					RelativePath="location\itemfoundanimation.h" />
+				<File
+					RelativePath="location\locationcontroller.h" />
+				<File
+					RelativePath="location\locationview.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;location\locationview.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 location\locationview.h -o generatedfiles\moc\moc_locationview.cpp"
+							Description="MOC location\locationview.h"
+							Outputs="generatedfiles\moc\moc_locationview.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;location\locationview.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 location\locationview.h -o generatedfiles\moc\moc_locationview.cpp"
+							Description="MOC location\locationview.h"
+							Outputs="generatedfiles\moc\moc_locationview.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="location\searchpanelview.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;location\searchpanelview.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 location\searchpanelview.h -o generatedfiles\moc\moc_searchpanelview.cpp"
+							Description="MOC location\searchpanelview.h"
+							Outputs="generatedfiles\moc\moc_searchpanelview.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;location\searchpanelview.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 location\searchpanelview.h -o generatedfiles\moc\moc_searchpanelview.cpp"
+							Description="MOC location\searchpanelview.h"
+							Outputs="generatedfiles\moc\moc_searchpanelview.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="location\timerview.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;location\timerview.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 location\timerview.h -o generatedfiles\moc\moc_timerview.cpp"
+							Description="MOC location\timerview.h"
+							Outputs="generatedfiles\moc\moc_timerview.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;location\timerview.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 location\timerview.h -o generatedfiles\moc\moc_timerview.cpp"
+							Description="MOC location\timerview.h"
+							Outputs="generatedfiles\moc\moc_timerview.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+				</File>
+			</Filter>
+			<Filter
+				Name="mainscreen"
+				Filter="">
+				<File
+					RelativePath="mainscreen\locationinfodialog.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;mainscreen\locationinfodialog.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 mainscreen\locationinfodialog.h -o generatedfiles\moc\moc_locationinfodialog.cpp"
+							Description="MOC mainscreen\locationinfodialog.h"
+							Outputs="generatedfiles\moc\moc_locationinfodialog.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;mainscreen\locationinfodialog.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 mainscreen\locationinfodialog.h -o generatedfiles\moc\moc_locationinfodialog.cpp"
+							Description="MOC mainscreen\locationinfodialog.h"
+							Outputs="generatedfiles\moc\moc_locationinfodialog.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="mainscreen\mainscreenwidget.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;mainscreen\mainscreenwidget.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 mainscreen\mainscreenwidget.h -o generatedfiles\moc\moc_mainscreenwidget.cpp"
+							Description="MOC mainscreen\mainscreenwidget.h"
+							Outputs="generatedfiles\moc\moc_mainscreenwidget.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;mainscreen\mainscreenwidget.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 mainscreen\mainscreenwidget.h -o generatedfiles\moc\moc_mainscreenwidget.cpp"
+							Description="MOC mainscreen\mainscreenwidget.h"
+							Outputs="generatedfiles\moc\moc_mainscreenwidget.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="mainscreen\stickerbutton.h">
+					<FileConfiguration
+						Name="Debug|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;mainscreen\stickerbutton.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 mainscreen\stickerbutton.h -o generatedfiles\moc\moc_stickerbutton.cpp"
+							Description="MOC mainscreen\stickerbutton.h"
+							Outputs="generatedfiles\moc\moc_stickerbutton.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32">
+						<Tool
+							Name="VCCustomBuildTool"
+							AdditionalDependencies="E:\Qt\4.8.4\bin\moc.exe;mainscreen\stickerbutton.h"
+							CommandLine="E:\Qt\4.8.4\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_KEYWORDS -DBUILD_GUI_LIB -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\..\Qt\4.8.4\include\QtCore&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtGui&quot; -I&quot;..\..\..\Qt\4.8.4\include\QtOpenGL&quot; -I&quot;..\..\..\Qt\4.8.4\include&quot; -I&quot;..&quot; -I&quot;.&quot; -I&quot;..\..\..\Qt\4.8.4\include\ActiveQt&quot; -I&quot;generatedfiles\moc&quot; -I..\..\..\Qt\4.8.4\mkspecs\default -D_MSC_VER=1500 -DWIN32 mainscreen\stickerbutton.h -o generatedfiles\moc\moc_stickerbutton.cpp"
+							Description="MOC mainscreen\stickerbutton.h"
+							Outputs="generatedfiles\moc\moc_stickerbutton.cpp"
+							Path="e:\Qt\4.8.4\bin" />
+					</FileConfiguration>
+				</File>
+			</Filter>
+			<File
+				RelativePath="gui.h" />
+			<File
+				RelativePath="pch.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="echo /*-------------------------------------------------------------------- >pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * the .pch file.>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * command line compilations by nmake.>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo #include &quot;pch.h&quot;>>pch.h.cpp"
+						Description="Generating precompiled header source file &apos;pch.h.cpp&apos; ..."
+						Outputs="pch.h.cpp" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="echo /*-------------------------------------------------------------------- >pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * the .pch file.>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * command line compilations by nmake.>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>pch.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo #include &quot;pch.h&quot;>>pch.h.cpp"
+						Description="Generating precompiled header source file &apos;pch.h.cpp&apos; ..."
+						Outputs="pch.h.cpp" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
+			<Filter
+				Name="generatedfiles"
+				Filter="">
+				<Filter
+					Name="moc"
+					Filter="">
+					<File
+						RelativePath="generatedfiles\moc\moc_animations.cpp" />
+					<File
+						RelativePath="generatedfiles\moc\moc_closebutton.cpp" />
+					<File
+						RelativePath="generatedfiles\moc\moc_dialog.cpp" />
+					<File
+						RelativePath="generatedfiles\moc\moc_dialogmanager.cpp" />
+					<File
+						RelativePath="generatedfiles\moc\moc_energywidget.cpp" />
+					<File
+						RelativePath="generatedfiles\moc\moc_gamewidget.cpp" />
+					<File
+						RelativePath="generatedfiles\moc\moc_locationinfodialog.cpp" />
+					<File
+						RelativePath="generatedfiles\moc\moc_locationview.cpp" />
+					<File
+						RelativePath="generatedfiles\moc\moc_mainscreenwidget.cpp" />
+					<File
+						RelativePath="generatedfiles\moc\moc_searchpanelview.cpp" />
+					<File
+						RelativePath="generatedfiles\moc\moc_stickerbutton.cpp" />
+					<File
+						RelativePath="generatedfiles\moc\moc_timerview.cpp" />
+				</Filter>
+			</Filter>
+			<File
+				RelativePath="pch.h.cpp">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="pch.h"
+						UsePrecompiledHeader="1" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="pch.h"
+						UsePrecompiledHeader="1" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
